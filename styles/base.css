@@ -1,0 +1,144 @@
+* {
+    --color-1: #161925;
+    --color-2: #23395B;
+    --color-3: #060b0e;
+    --color-4: #8ea8c3;
+    --color-5: #CBF7ED;
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 36px;
+}
+
+:root {
+    background-color: var(--color-4);
+    color: var(--color-3)
+}
+
+main {
+    padding: 1rem;
+    max-width: 2000px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    border-radius: 8px;
+}
+
+header {
+    width: 100%;
+    background: var(--color-2);
+    color: var(--color-5);
+    padding: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+a {
+    display: flex;
+    color: var(--color-4);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    justify-self: bottom;
+    background: var(--color-3);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    border: 5px solid var(--color-3);
+    border-radius: 15px;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.card img {
+    border: 5px solid var(--color-2);
+    max-width: auto;
+    max-height: 350px;
+    min-height: 300px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+body {
+    color: var(--color-3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-2);
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem;
+    grid-column: 1 / 4;
+}
+
+h2 {
+    display: flex;
+    font-size: 1rem;
+    font-weight: bold;
+    justify-content: center;
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+
+    border-radius: 20px;
+}
+
+footer {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--color-2);
+    text-align: center;
+    color: var(--color-5);
+    text-align: center;
+}
+
+p2 {
+    color: var(--color-4)
+}
+
+.left-sidebar,
+.right-sidebar {
+    padding: 1rem;
+}
