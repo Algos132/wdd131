@@ -8,7 +8,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-size: 36px;
+    font-size: 16px;
 }
 
 :root {
@@ -35,8 +35,9 @@ header {
     font-weight: bold;
 }
 
-ul {
+.web-dev-resources {
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
@@ -44,18 +45,15 @@ ul {
 }
 
 a {
-    display: flex;
-    color: var(--color-4);
+    color: var(--color-5);
     text-decoration: none;
     font-weight: bold;
 }
 
 nav {
-    display: flex;
+    background: var(--color-1);
+    padding: 1rem;
     width: 100%;
-    justify-content: space-between;
-    justify-self: bottom;
-    background: var(--color-3);
     font-size: 24px;
     font-weight: bold;
 }
@@ -67,16 +65,44 @@ section {
     border-radius: 15px;
 }
 
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
 .card {
     display: grid;
     grid-template-columns: 1fr;
 }
 
+.arch {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 350px;
+    font-size: 12px;
+    color: var(--color-5);
+    text-align: center;
+}
+
+.profile {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 250px;
+    font-size: 12px;
+    color: var(--color-5);
+    text-align: center;
+}
+
+
 .card img {
     border: 5px solid var(--color-2);
+    border-radius: 15px;
     max-width: auto;
-    max-height: 350px;
-    min-height: 300px;
+    max-height: 100px;
+    min-height: 200px;
+
 }
 
 .content {
@@ -118,8 +144,18 @@ h2 {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 1rem;
-
+    
     border-radius: 20px;
+}
+
+.web-dev-resources a {
+    color: var(--color-1);
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
 }
 
 footer {
@@ -134,8 +170,17 @@ footer {
     text-align: center;
 }
 
-p2 {
+.footer {
     color: var(--color-4)
+}
+
+.lastmodified {
+    color: var(--color-5);
+}
+
+p {
+    color: var(--color-1);
+    padding: 1rem;
 }
 
 .left-sidebar,

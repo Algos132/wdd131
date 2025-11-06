@@ -4,22 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles\base.css">
+    <link rel="stylesheet" href="styles/base.css">
     <script src="scripts/getdates.js" defer></script>
     <title>WDD 131 : Dynamic Web Fundamentals | Michael Heil</title>
-    <meta author="Michael Heil">
 </head>
 
 <body>
     <header>
         <span>WDD 131: Dynamic Web Fundamentals</span>
         <nav>
-            <ul>
-                <a href="https://www.linkedin.com/in/michael-heil-33b34133a">LinkedIn</a>
-                <a href="https://byupw.instructure.com/">Canvas</a>
-                <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/3?lang=eng#:~:text=5%20Behold%2C%20O%20Lord%2C%20thou%20canst%20do%20this.%20We%20know%20that%20thou%20art%20able%20to%20show%20forth%20great%20power%2C%20which%20looks%20small%20unto%20the%20understanding%20of%20men.">Favorite Scripture</a>
-                <a>Final Project (placeholder)</a>
-            </ul>
+            <div class="navigation">
+                <li><a href="https://www.linkedin.com/in/michael-heil-33b34133a">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/3?lang=eng#:~:text=5%20Behold%2C%20O%20Lord%2C%20thou%20canst%20do%20this.%20We%20know%20that%20thou%20art%20able%20to%20show%20forth%20great%20power%2C%20which%20looks%20small%20unto%20the%20understanding%20of%20men.">Favorite Scripture</a></li>
+                <li><a>Final Project (placeholder)</a></li>
+            </div>
         </nav>
     </header>
 
@@ -30,10 +29,10 @@
                 <div class="content">
                     <p>My name is Michael Heil. I was born and raised in Provo Utah. I currenly attend the BYU Pathway program. I play the
                     trombone, and I am teaching myself to play the guitar. </p>
-                    <p><img src="images\profile.jpg"></p>
+                    <p class="profile"><img src="images\profile.jpg"></p>
                         
-                    <p><img src="images/UtahArch.jpg"></p>                
-                    <p class="card">Utah is a beautiful state, despite being a mostly a desert, it has breathtaking sites. Most famous are
+                    <p class="arch"><img src="images/UtahArch.jpg">Arches National Park</p>                
+                    <p>Utah is a beautiful state, despite being mostly desert. It has some of the most breathtaking sites. Most famous are
                     the naturally-formed arches and the hiking trails that lead to them. Settled by the Mormon Pioneers, the state was to be
                     called "Desseret" meaning "honey bee". However when it became a part of the United States of America, it was called
                     "Utah" after the Native American tribe the "Utes"</p>
@@ -41,18 +40,22 @@
             </section>
             <section class="card">
                 <h1>Web Dev Resources</h1>
-                <div class="content">
-                    <ul>
-                        <li><a href</li>
-                    </ul>
+                <div class="web-dev-resources">
+                    <a href="https://dev.to/">Dev.to Community</a>
+                    <a href="https://www.smashingmagazine.com/">Smashing Magazine</a>
+                    <a href="https://css-tricks.com/">CSS Tricks</a>
+                    <a href="https://www.w3schools.com/">W3 Schools</a>
+                    <a href="https://www.udemy.com/">Udemy</a>
+                    <a href="https://www.w3schools.com/tags/att_img_src.asp">Image Placeholder</a>
+                </div>
             </section>
         </div>
     </main>
 </body>
 
     <footer>
-        <p>©️ <span id="currentyear"></span> | Michael Heil | Utah </p>
-        <p id="lastmodified"></p>
+        <p class="footer">©️ <span id="currentyear"></span> | Michael Heil | Utah </p>
+        <p class="lastmodified" id="lastmodified"></p>
     </footer>
 
 </html>
