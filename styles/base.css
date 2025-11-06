@@ -68,11 +68,18 @@ nav {
     font-weight: bold;
 }
 
+div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 section {
     display: flex;
     flex-direction: column;
     border: 5px solid var(--color-3);
     border-radius: 15px;
+    height: 560px;
 }
 
 .navigation {
@@ -138,24 +145,22 @@ body {
     margin: 0;
 }
 
-h1 {
+h1, h2 {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 60px;
     background-color: var(--color-2);
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
     padding: 1rem;
     grid-column: 1 / 4;
 }
 
 h2 {
-    display: flex;
-    font-size: 1rem;
-    font-weight: bold;
-    justify-content: center;
-
+    padding: 0rem;
 }
+
 
 .grid {
     display: grid;
