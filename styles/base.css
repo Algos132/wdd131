@@ -44,10 +44,20 @@ header {
     padding: 1rem;
 }
 
+span#course-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
 a {
     color: var(--color-5);
     text-decoration: none;
     font-weight: bold;
+}
+
+a:hover {
+    color: var(--color-5);
+    text-decoration: underline;
 }
 
 nav {
@@ -151,7 +161,7 @@ h2 {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 1rem;
-    
+
     border-radius: 20px;
 }
 
@@ -174,7 +184,6 @@ footer {
     background-color: var(--color-2);
     text-align: center;
     color: var(--color-5);
-    text-align: center;
 }
 
 .footer {
