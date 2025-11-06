@@ -74,6 +74,12 @@ div {
     align-items: center;
 }
 
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 section {
     display: flex;
     flex-direction: column;
@@ -121,7 +127,6 @@ section {
 .card img {
     border: 5px solid var(--color-2);
     border-radius: 15px;
-    max-width: auto;
     max-height: 100px;
     min-height: 200px;
 
@@ -145,7 +150,8 @@ body {
     margin: 0;
 }
 
-h1, h2 {
+h1,
+h2 {
     display: flex;
     align-items: center;
     justify-content: center;
