@@ -12,6 +12,7 @@ button.addEventListener("click", function () {
     if (input.value.trim() !== "") {
         const li = document.createElelment("li");
         li.textContent = input.value;
+        li.append(deleteButton);
         list.append(li);
     }
 });
