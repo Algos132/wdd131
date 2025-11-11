@@ -1,0 +1,31 @@
+* {
+    --color-1: #161925;
+    --color-2: #23395B;
+    --color-3: #060b0e;
+    --color-4: #8ea8c3;
+    --color-5: #fff;
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+@media (max-width: 40px) {
+    nav a:hover {
+        background-color: var(--color-2);
+        color: var(--color-5);
+        text-decoration: underline;
+        border: 2px solid var(--color-4);
+        border-bottom: 3px solid var(--color-4);
+    }
+    main {
+        max-width: 200px;
+        margin: 0 auto;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
