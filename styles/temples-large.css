@@ -14,6 +14,7 @@
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
         gap: 1rem;
+        padding: 1rem;
     }
 
     img {
@@ -21,11 +22,9 @@
         min-width: 100%;
     }
 
-    .navigation, .navigation.show{
+    .navigation {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        border: 2px solid var(--color-4);
-        border-bottom: 3px solid var(--color-4);
     }    
 }
