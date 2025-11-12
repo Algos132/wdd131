@@ -90,16 +90,40 @@ a {
     color: var(--color-5);
 }
 
-#menu::before {
-    content: "X";
-}
-
 #menu.show::before {
     content: "≡";
 }
 
+#menu::before {
+    content: "X";
+}
+
 .navigation.show {
     display: none;
+}
+
+figure {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background-color: var(--color-1);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+figcaption {
+    color: var(--color-5);
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+img {
+    max-width: 100%;
+    min-width: 100%;
+    border-radius: 5px;
 }
 
 .grid {
