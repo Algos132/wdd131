@@ -2,9 +2,8 @@ const date = new Date();
 document.querySelector("#currentyear").innerHTML = date.getFullYear();
 document.getElementById("lastmodified").innerHTML = `Last Modification: ${document.lastModified}`;
 
-/* Starts the mobile version closed */
-navigation.classList.add('show');
-hambutton.classList.add('show');
+const hambutton = document.querySelector('#menu');
+const navigation = document.querySelector('.navigation');
 
 hambutton.addEventListener('click', () => {
     navigation.classList.toggle('show');
