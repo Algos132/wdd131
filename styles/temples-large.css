@@ -1,85 +1,31 @@
-* {
-    --color-1: #161925;
-    --color-2: #23395B;
-    --color-3: #060b0e;
-    --color-4: #8ea8c3;
-    --color-5: #fff;
+@media screen and (min-width: 700px) {
+    header {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
 
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-size: 16px;
-}
-
-@media (min-width: 800px) {
-    nav a:hover {
-        background-color: var(--color-2);
-        color: var(--color-5);
-        text-decoration: underline;
+    #menu {
+        display: none;
     }
 
     .grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
         gap: 1rem;
     }
-}
 
-main {
-    display: block;
-    text-align: center;
-}
+    img {
+        max-width: 100%;
+        min-width: 100%;
+    }
 
-header {
-    display: block;
-    width: 100%;
-    align-self: center;
-    text-align: center;
-    color: var(--color-5);
-    background-color: var(--color-2);
-}
-
-nav {
-    background-color: var(--color-2);
-    border: 2px solid var(--color-4);
-    border-bottom: 3px solid var(--color-4);
-}
-
-h1 {
-    padding: 1rem;
-    margin-bottom: 0;
-    font-size: 2.5rem;
-}
-
-li {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    background-color: var(--color-4);
-}
-
-a {
-    color: var(--color-5);
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.2rem;
-    padding: 1rem;
-}
-
-.temple-cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
-    padding: 1rem;
-}
-
-footer {
-    display: block;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 1rem;
-    background-color: var(--color-2);
-    text-align: center;
-    color: var(--color-5);
+    .navigation, .navigation.show{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border: 2px solid var(--color-4);
+        border-bottom: 3px solid var(--color-4);
+    }    
 }

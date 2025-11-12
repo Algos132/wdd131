@@ -9,23 +9,104 @@
     margin: 0;
     box-sizing: border-box;
     font-size: 16px;
+    font-family: 'Roboto', sans-serif;
 }
 
-@media (max-width: 40px) {
-    nav a:hover {
-        background-color: var(--color-2);
-        color: var(--color-5);
-        text-decoration: underline;
-        border: 2px solid var(--color-4);
-        border-bottom: 3px solid var(--color-4);
-    }
-    main {
-        max-width: 200px;
-        margin: 0 auto;
-    }
-    .grid {
+.navigation a:hover {
+    background-color: var(--color-2);
+    color: var(--color-5);
+    width: 100%;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid var(--color-4);
+    border-bottom: 3px solid var(--color-4);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    color: var(--color-5);
+    background-color: var(--color-2);
+}
+
+main {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1, h2 {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 0;
+    font-size: 4rem;
+}
+
+li {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: var(--color-4);
+}
+
+a {
+    color: var(--color-5);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 1rem;
+
+}
+
+#menu {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--color-4);
+
+    border-radius: 3px;
+    color: var(--color-5);
+}
+
+#menu::before {
+    content: "X";
+}
+
+#menu.show::before {
+    content: "≡";
+}
+
+.navigation.show {
+    display: none;
+}
+
+.grid {
         display: grid;
         grid-template-columns: 1fr;
         gap: 1rem;
     }
+
+footer {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--color-2);
+    text-align: center;
+    color: var(--color-5);
 }
