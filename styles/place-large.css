@@ -1,0 +1,24 @@
+* {
+    --color-1: #161925;
+    --color-2: #23395B;
+    --color-3: #060b0e;
+    --color-4: #8ea8c3;
+    --color-5: #fff;
+    --color-6: #2b2b2b;
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    display: flex;
+    justify-content: space-around;
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--color-5);
+    background-color: var(--color-2);
+}
+
