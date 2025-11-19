@@ -20,10 +20,14 @@
         <h1>United States of America</h1>
     </header>
     <main>
+        <div class="hero">
         <picture>
-            <source srcset="images/hero.webp" media="max-width: 700px">
-            <img src="images/hero-large.webp" alt="Bald Eagle">
+            <source srcset="images/hero-large.webp" media="min-width: 750px">
+            <source srcset="images/hero.webp" media="max-width: 750px">
+            <img srcset="images/hero.webp" alt="Bald Eagle">
         </picture>
+        </div>
+        <div class="data-and-weather">
         <section class="data">
             <h2>Data</h2>
             <div class="grid">
@@ -54,6 +58,7 @@
             <span class="value"></span>
             </div>
         </section>
+        </div>
     </main>
     <footer>
         <p class="footer">©️ <span id="currentyear"></span> | Michael Heil | Utah </p>

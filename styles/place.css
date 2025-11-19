@@ -1,3 +1,87 @@
-@media screen and (max-width: 700px) {
-    
+:root {
+    --color-1: #161925;
+    --color-2: #23325b;
+    --color-3: #060b0e;
+    --color-4: #5b2323;
+    --color-5: #ffffffb1;
+    --color-6: #ffffff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+}
+
+h1,
+h2 {
+    text-align: center;
+    color: var(--color-6);
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    background-color: var(--color-4);
+}
+
+h2 {
+    justify-items: center;
+    flex-direction: column;
+    width: 250px;
+    font-size: 2rem;
+    background-color: var(--color-2);
+    padding: 1rem;
+}
+
+.grid {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+    border: 3px solid var(--color-4);
+    border-radius: 15px;
+}
+
+picture,
+img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    max-height: 700px;
+    border-bottom: .5rem solid var(--secondary-color);
+    object-fit: cover;
+    display: block;
+}
+
+footer {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--color-2);
+    text-align: center;
+    color: var(--color-6);
 }

@@ -1,90 +1,39 @@
-* {
-    --color-1: #161925;
-    --color-2: #23325b;
-    --color-3: #060b0e;
-    --color-4: #5b2323;
-    --color-5: #ffffffb1;
-    --color-6: #ffffff;
+@media screen and (min-width: 750px) {
+    main {
+            position: relative;
+    }
 
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-size: 16px;
-    font-family: 'Roboto', sans-serif;
-}
+    h1{
+        font-size: 5rem;
+    }
+    h2 {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        justify-items: normal;
+        margin-right: 5rem;
+    }
 
-main {
-    position: relative;
-}
+    .data,
+    .weather {
+        grid-template-columns: 1fr 1fr;
+    }
 
-section {
-    position: absolute;
-    background-color: var(--color-5);
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-}
+    .data {
+        top: 5rem;
+        left: 5rem;
+    }
 
-.icon {
-    width: 15%;
-}
+    .weather {
+        bottom: 5rem;
+        right: 5rem;
+    }
 
-h1, h2 {
-    display: flex;
-    justify-content: space-around;
-    color: var(--color-6);
-}
-
-h1 {
-    font-size: 4rem;
-    font-weight: bold;
-    background-color: var(--color-4);
-}
-
-h2 {
-    justify-content: space-between;
-    width: 250px;
-    font-size: 2rem;
-    background-color: var(--color-2);
-    margin-left: -2rem;
-    padding: 1rem;
-}
-
-.data, .weather {
-    display: absolute;
-    grid-template-columns: 1fr 1fr;
-}
-
-.grid{
-    padding: 1rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-}
-
-.data {
-    top: 5rem;
-    left: 5rem;
-}
-
-.weather {
-    bottom: 5rem;
-    right: 5rem;
-}
-
-picture, img {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-footer {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 1rem;
-    background-color: var(--color-2);
-    text-align: center;
-    color: var(--color-6);
+    section {
+        position: absolute;
+        background-color: var(--color-5);
+        padding: 1rem;
+        border: none;
+        border-radius: 0px;
+    }
 }
