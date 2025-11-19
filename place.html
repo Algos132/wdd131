@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Michael Heil">
-    <meta name="description" content="Michael Heil's page for the WDD 131 - Country Page assignment, for the United States of America.">
+    <meta name="description" content="Michael Heil's page for the WDD 131 - Country Page assignment.">
 
     <link rel="stylesheet" href="styles/place.css">
     <link rel="stylesheet" href="styles/place-large.css">
@@ -21,9 +21,39 @@
     </header>
     <main>
         <picture>
-            <source srcset="images/hero.webp" media="min-width: 550px">
-            <img srcset="images/hero-large.webp" alt="Bald Eagle">
+            <source srcset="images/hero.webp" media="max-width: 700px">
+            <img src="images/hero-large.webp" alt="Bald Eagle">
         </picture>
+        <section class="data">
+            <h2>Data</h2>
+            <div class="grid">
+            <span class="label">Area:</span>
+            <span class="value">3.8 million miles²</span>
+            <span class="label">Population:</span>
+            <span class="value">343.6 million</span>
+            <span class="label">Capital:</span>
+            <span class="value">Washington DC</span>
+            <span class="label">Currency:</span>
+            <span class="value">USD</span>
+            <span class="label">Languages:</span>
+            <span class="value">English, Spanish</span>
+            <span class="label">Timezones:</span>
+            <span class="value">EST, CST, MST, PST</span>
+            </div>
+        </section>
+        <section class="weather">
+            <h2>Weather <img class="icon" src="images\weather.svg" alt="weather"></h2>
+            <div class="grid">
+            <span class="label">Temperature:</span>
+            <span class="value"></span>
+            <span class="label">Humidity:</span>
+            <span class="value"></span>
+            <span class="label">Wind Speed:</span>
+            <span class="value"></span>
+            <span class="label">Description:</span>
+            <span class="value"></span>
+            </div>
+        </section>
     </main>
     <footer>
         <p class="footer">©️ <span id="currentyear"></span> | Michael Heil | Utah </p>
