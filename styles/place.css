@@ -69,7 +69,6 @@ img {
 .hero img {
     width: 100%;
     height: auto;
-    max-height: 700px;
     border-bottom: .5rem solid var(--secondary-color);
     object-fit: cover;
     display: block;
