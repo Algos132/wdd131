@@ -7,6 +7,9 @@
         font-size: 5rem;
     }
     h2 {
+        position: absolute;
+        top: -3rem;
+        left: -2rem;
         justify-items: normal;
         margin-right: 5rem;
     }
@@ -18,12 +21,12 @@
 
     .data {
         top: 5rem;
-        left: 1rem;
+        left: 2rem;
     }
 
     .weather {
         bottom: 5rem;
-        right: 1rem;
+        right: 2rem;
     }
 
     section {
