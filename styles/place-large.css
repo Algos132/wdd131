@@ -7,9 +7,6 @@
         font-size: 5rem;
     }
     h2 {
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
         justify-items: normal;
         margin-right: 5rem;
     }
