@@ -13,7 +13,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.navigation, a:hover {
+nav, a:hover {
     background-color: var(--color-2);
     color: var(--color-5);
     width: 100%;
@@ -24,11 +24,11 @@ a:hover {
     text-decoration: underline;
 }
 
-.navigation {
+nav {
     display: none;
 }
 
-.navigation.show {
+nav.show {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
