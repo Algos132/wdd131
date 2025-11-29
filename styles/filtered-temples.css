@@ -1,0 +1,137 @@
+* {
+    --color-1: #161925;
+    --color-2: #23395B;
+    --color-3: #060b0e;
+    --color-4: #8ea8c3;
+    --color-5: #fff;
+    --color-6: #2b2b2b;
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navigation, a:hover {
+    background-color: var(--color-2);
+    color: var(--color-5);
+    width: 100%;
+    text-align: center;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    color: var(--color-5);
+    background-color: var(--color-2);
+}
+
+main {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+}
+
+h1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+h1, h2 {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 0;
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+li {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: var(--color-6);
+}
+
+a {
+    width: 100%;
+    color: var(--color-5);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+#menu {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--color-6);
+    border-radius: 3px;
+    color: var(--color-5);
+    border: 1px solid var(--color-5);
+    width: 75px;
+}
+
+#menu:hover {
+    background-color: var(--color-2);
+    color: var(--color-5);
+}
+
+#menu.show::before {
+    content: "≡";
+}
+
+#menu::before {
+    content: "X";
+}
+
+section {
+    background-color: var(--color-4);
+    padding: 1rem;
+    border-radius: 5px;
+    border: 2px solid var(--color-3);
+    height: 425px;
+}
+
+img {
+    height: 300px;
+    border-radius: 5px;
+    border: 2px solid var(--color-3)
+}
+
+.grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+footer {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--color-2);
+    text-align: center;
+    color: var(--color-5);
+}
