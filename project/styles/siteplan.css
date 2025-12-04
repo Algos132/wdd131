@@ -8,3 +8,7 @@
     /*Used as a background card to separate the hero image from the content of the webpage*/
     --background-color: #303030;
 }
+
+img {
+    padding: 1rem;
+}
