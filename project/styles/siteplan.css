@@ -1,0 +1,10 @@
+* {
+    /*Used for the header and footer*/
+    --header-color: #003153;
+    /*Used the text*/
+    --text-color: #EFF1F3;
+    /*Additional color, added for variety or not at all*/
+    --accent-color: #6F1D1C;
+    /*Used as a background card to separate the hero image from the content of the webpage*/
+    --background-color: #303030;
+}
