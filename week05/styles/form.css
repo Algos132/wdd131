@@ -81,3 +81,9 @@ a {
 .submit:hover, a:hover {
     background-color: #3167b3;
 }
+
+@media (max-width: 600px) {
+    body {
+        width: 90%;
+    }
+}
