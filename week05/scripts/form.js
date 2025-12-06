@@ -46,7 +46,7 @@ if (select) {
 }
 
 /*Visit Counter on confirmation page*/
-const main = document.querySelector("confirmation");
+const main = document.querySelector(".confirmation");
 
 console.log(main);
 
@@ -59,5 +59,5 @@ if (main) {
     visitNumber++;
     localStorage.setItem("times-visited", visitNumber);
 
-    counter.textContent = `You have submitted ${visitNumber} reviews!`;
+    counter.textContent = `You have submitted ${visitNumber} reviews. Thank you for your support!`;
 }
