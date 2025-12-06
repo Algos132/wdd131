@@ -44,20 +44,3 @@ if (select) {
         select.appendChild(dropdownItem);
     });
 }
-
-/*Visit Counter on confirmation page*/
-const main = document.querySelector(".confirmation");
-
-console.log(main);
-
-if (main) {
-    let counter = document.createElement('p');
-    let visitNumber = Number(window.localStorage.getItem("times-visited")) || 0;
-
-
-    main.appendChild(counter)
-    visitNumber++;
-    localStorage.setItem("times-visited", visitNumber);
-
-    counter.textContent = `You have submitted ${visitNumber} reviews. Thank you for your support!`;
-}
