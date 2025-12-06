@@ -27,7 +27,7 @@ main {
     background-color: var(--background-color)
 }
 
-.required-label::before, p1::after{
+.required-label::before, .instruct::after{
     content: "*";
     color: red;
 }

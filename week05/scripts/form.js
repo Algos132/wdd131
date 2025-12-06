@@ -1,7 +1,7 @@
 /*Gets date for footer*/
 const date = new Date();
 document.querySelector("#currentyear").innerHTML = date.getFullYear();
-document.getElementById("lastmodified").innerHTML = `Last Modification: ${document.lastModified}`;
+document.getElementById("lastmodified").innerHTML = `Last Modified: ${document.lastModified}`;
 
 /*For the form*/
 const products = [
