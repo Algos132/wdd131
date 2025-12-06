@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Michael Heil">
+    <meta name="description" content="Michael Heil's page for the WDD 131 - Product Review assignment.">
+    <title>Product Review</title>
+
+    <link rel="stylesheet" href="styles/form.css">
+    <script defer src="scripts/form.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html" class="form">
+        <div>
+            <span class="required-label">Product Name</span>
+            <select name="product" id="product" required>
+                <option value disabled selected>Select a product...</option>
+            </select>
+        </div>
+            <span class="required-label">Overall Rating</span>
+            <div class="stars">
+                <label for="1star">☆</label>
+                <label for="2star">☆☆</label>
+                <label for="3star">☆☆☆</label>
+                <label for="4star">☆☆☆☆</label>
+                <label for="5star">☆☆☆☆☆</label>
+                <input type="radio" name="rating" value="1" id="1star" required>
+                <input type="radio" name="rating" value="2" id="2star" required>
+                <input type="radio" name="rating" value="3" id="3star" required>
+                <input type="radio" name="rating" value="4" id="4star" required>
+                <input type="radio" name="rating" value="5" id="5star" required>  
+            </div>
+            <div>
+                <label for="time-block">
+                    <span class="required-label">Date of Installation</span>
+                    <input type="date" id="time-block" name="time-block" required>
+                </label>
+            </div>
+            <p>Which features did you find useful in the product?</p>
+            <p>(Check all that apply)</p>
+            <div class="features">
+                <label for="durability">
+                    <input type="checkbox" id="durability" name="durability" value="yes">
+                    <span>Durability</span>
+                </label>
+                <label for="ease-of-use">
+                    <input type="checkbox" id="ease-of-use" name="ease-of-use" value="yes">
+                    <span>Ease of Use</span>
+                </label>
+                <label for="performance">
+                    <input type="checkbox" id="performance" name="performance" value="yes">
+                    <span>Performance</span>
+                </label>
+                <label for="design">
+                    <input type="checkbox" id="design" name="design" value="yes">
+                    <span>Design</span>
+                </label>
+            </div>
+            <div class="comment">
+                <label for="comment">
+                    <span>Written Review (Optional)</span>
+                    <textarea id="comment" name="comment" placeholder="Describe your experience/feedback (optional)"></textarea>
+                </label>
+            </div>
+            <div>
+                <label for="name">
+                    <span>Name (optional)</span>
+                    <input type="text" id="name" name="name" placeholder="Enter your name (optional)">
+                </label>
+            </div>
+            <input class="submit" type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer>
+        <p class="footer">©️ <span id="currentyear"></span> | Michael Heil | Utah </p>
+        <p class="lastmodified" id="lastmodified"></p>
+    </footer>
+</body>
+</html>
