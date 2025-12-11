@@ -10,6 +10,15 @@
     h1 {
         font-size: 1rem;
     }
+    
+    #menu .show {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navigation {
+        display: none;
+    }
 
     .navigation.show {
         display: flex;
@@ -35,11 +44,11 @@
         color: var(--color-5);
     }
 
-    #menu.show::before {
+    #menu::before {
         content: "≡";
     }
 
-    #menu::before {
+    #menu.show::before {
         content: "X";
     }
 
@@ -50,9 +59,11 @@
     footer {
         padding-top: 2rem;
     }
-}
 
-@media (max-width: 1390px) {
+    header {
+        padding-bottom: 1rem;
+    }
+    
     .team, .contact {
         grid-template-columns: 1fr;
     }

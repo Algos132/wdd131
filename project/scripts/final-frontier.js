@@ -1,23 +1,31 @@
 //Dates for footer element
 const date = new Date();
-document.querySelector("#currentyear").innerHTML = date.getFullYear();
-document.getElementById("lastmodified").innerHTML = `Last Modification: ${document.lastModified}`;
+const currentYearEl = document.querySelector("#currentyear");
+const lastModifiedEl = document.getElementById("lastmodified");
+
+if (currentYearEl) {
+    currentYearEl.innerHTML = date.getFullYear();
+}
+if (lastModifiedEl) {
+    lastModifiedEl.innerHTML = `Last Modification: ${document.lastModified}`;
+}
 
 //For hamburger button
 const hambutton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
 
-hambutton.addEventListener('click', () => {
-    navigation.classList.toggle('show');
-    hambutton.classList.toggle('show');
-});
-
-window.addEventListener("resize", () => {
-    if (window.innerWidth >= 973) {
-        navigation.classList.remove('show');
-        hambutton.classList.remove('show');
-    }
-});
+if (hambutton && navigation) {
+    hambutton.addEventListener('click', () => {
+        navigation.classList.toggle('show');
+        hambutton.classList.toggle('show');
+    });
+    window.addEventListener("resize", () => {
+        if (window.innerWidth >= 973) {
+            navigation.classList.remove('show');
+            hambutton.classList.remove('show');
+        }
+    });
+}
 
 /*For the form*/
 const actions = [
@@ -50,16 +58,17 @@ if (select) {
 }
 
 //For submission button
-const visitsDisplay = document.getElementById("#visits");
+const visitsDisplay = document.getElementById("visits");
 
-let numVisits = Number(window.localStorage.getItem("visitCount"));
+if (visitsDisplay) {
+    let numVisits = Number(window.localStorage.getItem("formSubmissions") || 0);
+    numVisits++;
 
-if (numVisits !== 0) {
-    visitsDisplay.textContent = numVisits;
-} else {
-    visitsDisplay.textContent = `This is your first visit. 🥳 Welcome!`;
+    if (numVisits === 1) {
+        visitsDisplay.textContent = `This is your first submission. 🥳 Thank you!`;
+    } else {
+        visitsDisplay.textContent = numVisits;
+    }
+
+    localStorage.setItem("formSubmissions", numVisits);
 }
-
-numVisits++;
-
-localStorage.setItem("visitCount", numVisits);
