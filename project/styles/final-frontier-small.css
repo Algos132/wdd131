@@ -53,7 +53,7 @@
     }
 
     .intro, .section1, .section2 {
-        border-radius: 0;
+        border-radius: 0px;
     }
 
     footer {
@@ -63,7 +63,7 @@
     header {
         padding-bottom: 1rem;
     }
-    
+
     .team, .contact {
         grid-template-columns: 1fr;
     }
