@@ -52,8 +52,9 @@
         content: "X";
     }
 
-    .intro, .section1, .section2 {
-        border-radius: 0px;
+    .intro, .section1 {
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
     }
 
     footer {
