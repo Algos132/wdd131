@@ -1,0 +1,26 @@
+@media screen and (min-width: 2124px) {
+    p, h1, h2 {
+       font-size: xx-large; 
+    }
+
+    .hero {
+        width: 100%;
+        height: auto;
+    }
+
+    .content {
+        max-height: 90%;
+    }
+
+    a {
+        font-size: 2rem;
+    }
+    
+    .submit {
+        padding: 10px;
+    }
+
+    p, span {
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,256 @@
+:root {
+    /*Used for the header and footer*/
+        --header-color: #062742;
+        /*Used for the titles*/
+        --title-color: #eaf3ff;
+        /*Used for the main text*/
+        --text-color: #1B1B1E;
+        /*Additional color, added for variety or not at all*/
+        --accent-color: #392a41;
+        /*Used as a background card to separate the hero image from the content of the webpage*/
+        --background-color: #eaf3ff;
+
+}
+
+* {
+    font-family: "Geo", sans-serif;
+}
+
+span {
+    color: var(--text-color);
+}
+
+body {
+    color: var(--text-color);
+    margin: auto;
+    background-color: var(--text-color);
+}
+
+header, footer {
+    background-color: var(--header-color);
+    color: var(--title-color);
+    text-align: center;
+    padding-top: 1rem;
+}
+
+h1, h2 {
+    font-family: "Science Gothic", sans-serif;
+}
+
+header h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+nav {
+    background-color: var(--background-color);
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    width: 100%;
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 1.25rem;
+    padding: 1rem;
+    border: 2px solid var(--background-color);
+}
+
+a:hover {
+    background-color: var(--text-color);
+    color: var(--title-color);
+    border: 2px solid var(--title-color);
+}
+
+#menu {
+    display: none;
+}
+
+main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero img {
+    width: auto;
+    height: 100%;
+    padding: 0px;
+    margin-bottom: -5px;
+
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 75%;
+    position: absolute;
+}
+
+.intro, .section1, .section2, .confirmation {
+    background-color: var(--background-color);
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.confirmation {
+    border-radius: 15px;
+}
+
+.content h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 2px solid;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.intro {
+    grid-column: span 2;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.section1 {
+    border-bottom-left-radius: 15px;
+}
+
+.section2 {
+    border-bottom-right-radius: 15px;
+}
+
+p {
+    padding: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer, .lastmodified {
+    color: var(--title-color);
+    font-size: 1.25rem;
+    padding-top: 1rem;
+}
+
+.lastmodified {
+    padding-bottom: 2rem;
+}
+
+.required-label::before,
+.instruct::after {
+    content: "*";
+    color: red;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.team, .contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: space-between;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.team h2 {
+    margin-bottom: 2rem;
+}
+
+.team h2, .introduction, .contact h2 {
+    grid-column: 1 / 4;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.employee, .introduction {
+    border: 2px solid var(--text-color);
+}
+
+.employee1, .employee2, .employee3, .employee {
+    width: 350px;
+    justify-self: space-between;
+}
+
+.employee2, .contact-img2 {
+    justify-self: center;
+}
+
+.employee3, .contact-img3 {
+    justify-self: right;
+}
+
+.team p {
+    text-align: center;
+    border: 2px solid var(--text-color);
+}
+
+.team, .form, .contact {
+    background-color: var(--background-color);
+    padding: 1rem;
+}
+
+.form, .team p:not(.introduction) {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+label.comment {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    min-width: 100%;
+    min-height: 100px;
+}
+
+input[type="text"] {
+    width: 100%;
+}
+
+.submit, .nav-back a {
+    margin-top: 10px;
+    padding: 10px;
+    width: 50%;
+    background-color: var(--header-color);
+    color: var(--title-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nav-back {
+    background-color: none;
+    justify-self: right;
+}
+
+.submit:hover, a:hover, .nav-back a:hover {
+    background-color: var(--accent-color);
+}
+
+@media (max-width: 600px) {
+    body {
+        width: 90%;
+    }
+}
