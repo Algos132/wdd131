@@ -168,6 +168,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: space-between;
+    gap: 1rem;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
@@ -187,7 +188,8 @@ footer {
 }
 
 .employee1, .employee2, .employee3, .employee {
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     justify-self: space-between;
 }
 
@@ -209,7 +211,7 @@ footer {
     padding: 1rem;
 }
 
-.contact img, .team img {
+.contact img {
     width: 75%;
 }
 
