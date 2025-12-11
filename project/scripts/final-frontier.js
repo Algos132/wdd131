@@ -3,9 +3,6 @@ const date = new Date();
 const currentYearEl = document.querySelector("#currentyear");
 const lastModifiedEl = document.getElementById("lastmodified");
 
-if (currentYearEl) {
-    currentYearEl.innerHTML = date.getFullYear();
-}
 if (lastModifiedEl) {
     lastModifiedEl.innerHTML = `Last Modification: ${document.lastModified}`;
 }
