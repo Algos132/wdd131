@@ -123,9 +123,11 @@ main {
 
 .section1 {
     border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 .section2 {
+    border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
 
